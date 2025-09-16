@@ -1,0 +1,554 @@
+/* General Body & Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #4a00e0; /* Matches a vibrant purple from your design */
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 30px;
+}
+
+.navbar nav ul li a {
+    font-weight: 600;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #4a00e0; /* Hover color */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 100%); /* Purple gradient */
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.hero-section h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 0;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.hero-section .subtitle,
+.hero-section .date {
+    font-size: 18px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.hero-section .btn-primary {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.hero-section .btn-primary .arrow {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.challenges-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.challenges-section h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #222;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr; /* Adjust ratio as needed */
+    gap: 60px;
+    text-align: left;
+    align-items: start;
+}
+
+.challenge-points {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.challenge-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.challenge-item .icon-error {
+    font-size: 30px;
+    color: #ff4d4f; /* Red for error/challenge */
+    margin-right: 15px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.challenge-item h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.challenge-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.manual-process-card {
+    background-color: #fff0f0; /* Light red background */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #ffe0e0;
+}
+
+.manual-process-card .card-icon {
+    font-size: 48px;
+    color: #ff4d4f; /* Red icon color */
+    margin-bottom: 25px;
+    line-height: 1;
+}
+.manual-process-card .card-icon svg {
+    stroke: #ff4d4f; /* For the SVG icon */
+}
+
+
+.manual-process-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.manual-process-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.manual-process-card ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.manual-process-card ul li::before {
+    content: '•';
+    color: #ff4d4f;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+.solution-section {
+    padding: 80px 0;
+    background-color: #eef3f7; /* Light blueish background */
+    text-align: center;
+}
+
+.solution-section .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.solution-section .section-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.solution-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.solution-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: left;
+    border: 1px solid #e0e7ed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.solution-card .card-icon {
+    font-size: 48px;
+    color: #28a745; /* Green for success/solution */
+    margin-bottom: 25px;
+    line-height: 1;
+}
+.solution-card .card-icon svg {
+    stroke: #28a745; /* For the SVG icon */
+}
+
+.solution-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.solution-card p {
+    font-size: 16px;
+    color: #666;
+}
+.impact-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.impact-section .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.impact-section .section-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.impact-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr; /* Similar to challenges */
+    gap: 60px;
+    text-align: left;
+    align-items: start;
+}
+
+.impact-points {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.impact-item .icon-success {
+    font-size: 30px;
+    color: #28a745; /* Green for success */
+    margin-right: 15px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.impact-item h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.impact-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.expected-improvements-card {
+    background-color: #e8f9ed; /* Light green background */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #d0f0d8;
+}
+
+.expected-improvements-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.improvements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+}
+
+.improvement-metric .percentage {
+    font-size: 48px;
+    font-weight: 700;
+    color: #28a745; /* Green */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.improvement-metric p {
+    font-size: 16px;
+    color: #555;
+}
+.transformation-section {
+    padding: 80px 0;
+    background-color: #eef3f7; /* Light blueish background */
+    text-align: center;
+}
+
+.transformation-section .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.transformation-section .section-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transformation-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between cards and arrow */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.transformation-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: left;
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 450px; /* Max width to keep them from getting too wide */
+}
+
+.as-is-state {
+    border: 1px solid #ffcccc; /* Light red border */
+}
+
+.as-is-state h3 {
+    color: #ff4d4f; /* Red heading */
+}
+
+.as-is-state ul li::before {
+    content: '\2716'; /* Unicode multiplication X for error */
+    color: #ff4d4f;
+}
+
+.to-be-state {
+    border: 1px solid #cce8d0; /* Light green border */
+}
+
+.to-be-state h3 {
+    color: #28a745; /* Green heading */
+}
+
+.to-be-state ul li::before {
+    content: '\2714'; /* Unicode checkmark for success */
+    color: #28a745;
+}
+
+.transformation-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.transformation-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transformation-card ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.4;
+}
+
+.transformation-card ul li::before {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.transformation-arrow {
+    font-size: 60px; /* Large arrow */
+    color: #4a00e0; /* Purple accent */
+    margin: 0 20px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/* For smaller screens, stack cards and make arrow smaller */
+@media (max-width: 900px) {
+    .transformation-cards-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .transformation-arrow {
+        transform: rotate(90deg); /* Rotate arrow for vertical flow */
+        font-size: 40px;
+        margin: 20px 0;
+    }
+}
+.thank-you-section {
+    background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 100%); /* Same gradient as hero */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.thank-you-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.thank-you-section p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.thank-you-section .team-info {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.thank-you-section .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.thank-you-section .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.thank-you-section .btn-secondary .arrow {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
